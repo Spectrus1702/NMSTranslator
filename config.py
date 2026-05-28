@@ -13,8 +13,7 @@ CONFIG = {
     "compiler": BASE_DIR / "tools" / "MBINCompiler.exe",
     "cache_file": BASE_DIR / "temp" / "cache" / "loc_entries.json",
     "lang_dir": BASE_DIR / "temp" / "language",
-    "mission_dir": BASE_DIR / "temp" / "metadata" / "simulation" / "missions" / "tables",
-    "dialog_dir": BASE_DIR / "temp" / "metadata" / "reality" / "tables",
+    "metadata_dir": BASE_DIR / "temp" / "metadata",
 }
 
 # ====================== Диалоги ======================
