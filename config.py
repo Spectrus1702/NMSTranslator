@@ -13,7 +13,8 @@ CONFIG = {
     "compiler": BASE_DIR / "tools" / "MBINCompiler.exe",
     "cache_file": BASE_DIR / "temp" / "cache" / "loc_entries.json",
     "lang_dir": BASE_DIR / "temp" / "language",
-    "dialog_file": BASE_DIR / "temp" / "metadata" / "reality" / "tables" / "nms_dialog_gcalienpuzzletable.MXML",
+    "mission_dir": BASE_DIR / "temp" / "metadata" / "simulation" / "missions" / "tables",
+    "dialog_dir": BASE_DIR / "temp" / "metadata" / "reality" / "tables",
 }
 
 # ====================== Диалоги ======================
