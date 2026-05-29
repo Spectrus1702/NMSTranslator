@@ -1,5 +1,5 @@
 # NMSTranslator
-A tool for creating linguistically correct dialogue in No Man's Sky
+A tool for creating linguistically correct dialogue in No Man's Sky.
 NOT FOR USE! STILL IN DEVELOPMENT
 
 ## License
