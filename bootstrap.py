@@ -5,6 +5,11 @@ from config import CONFIG
 
 
 def check_and_install_hgpaktool():
+    """
+    Проверяет, установлен ли пакет hgpaktool (обёртка для libhgap).
+    Если нет — автоматически ставит через pip.
+    hgpaktool нужен для чтения PAK-архивов игры (.pak).
+    """
     try:
         import hgpaktool
         print("✓ hgpaktool уже установлен")
@@ -21,6 +26,11 @@ def check_and_install_hgpaktool():
 
 
 def check_mbin_compiler():
+    """
+    Проверяет, лежит ли MBINCompiler.exe в папке tools/.
+    Этот экзешник конвертирует игровые MBIN-файлы в читаемый MXML и обратно.
+    Качать с GitHub: https://github.com/monkeyman192/MBINCompiler
+    """
     compiler_path: Path = CONFIG["compiler"]
     if compiler_path.exists():
         print(f"✓ MBINCompiler.exe найден: {compiler_path}")
@@ -32,6 +42,10 @@ def check_mbin_compiler():
 
 
 def bootstrap():
+    """
+    Точка входа. Проверяет все зависимости перед запуском основного приложения.
+    Вызывается в самом начале, чтобы не упасть на полпути из-за отсутствия инструментов.
+    """
     print("=== NMS Translator Bootstrap ===")
     check_and_install_hgpaktool()
     check_mbin_compiler()
